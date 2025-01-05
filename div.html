@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Grid</title>
+    <link rel="stylesheet" href="div.css">
+</head>
+<style>
+    .con {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        margin: 50px 0;
+        gap: 50px;
+
+
+    }
+
+    .box {
+        display: grid;
+        gap: 10px;
+        grid-template-areas: "I1 I2 I3"
+            "I1 I4  I7 "
+            "I5 I6 I7"
+            "I8 I9 I10"
+            "I8 I11 I12"
+            "I14 I16 I13"
+            "I14 I15 I15"
+            ;
+    }
+
+    .box-img {
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+        width: 100%;
+        height: 100%;
+    }
+
+    .item1 {
+        grid-area: I1;
+    }
+
+    .item2 {
+        grid-area: I2;
+    }
+
+    .item3 {
+        grid-area: I3;
+    }
+
+    .item4 {
+        grid-area: I4;
+    }
+
+    .item5 {
+        grid-area: I5;
+    }
+
+    .item6 {
+        grid-area: I6;
+    }
+
+    .item7 {
+        grid-area: I7;
+    }
+
+    .item8 {
+        grid-area: I8;
+    }
+
+    .item9 {
+        grid-area: I9;
+    }
+
+    .item10 {
+        grid-area: I10;
+    }
+
+    .item11 {
+        grid-area: I11;
+    }
+
+    .item12 {
+        grid-area: I12;
+    }
+
+    .item13 {
+        grid-area: I13;
+    }
+    .item14 {
+        grid-area: I14;
+    }
+    .item15 {
+        grid-area: I15;
+    }
+    .item16 {
+        grid-area: I16;
+    }
+    .box-img:hover{
+        transform:scale(1.02);
+        transition: 0.2s ease-in-out;
+    }
+</style>
+
+<body>
+   <center><h1>Image Grid</h1></center>
+    <div class="con">
+        <div class="container">
+            <div class="box">
+                <div class="item1">
+                    <img class="box-img" src="s1.jpg" alt="">
+                </div>
+                <div class="item2">
+                    <img class="box-img" src="s2.jpg" alt="">
+                </div>
+                <div class="item3">
+                    <img class="box-img" src="s3.jpg" alt="">
+                </div>
+                <div class="item4">
+                    <img class="box-img" src="s4.jpg" alt="">
+                </div>
+                <div class="item5">
+                    <img class="box-img" src="s5.jpg" alt="">
+                </div>
+                <div class="item6">
+                    <img class="box-img" src="s6.jpg" alt="">
+                </div>
+
+                <div class="item7">
+                    <img class="box-img" src="s7.jpg" alt="">
+                </div>
+                <div class="item8">
+                    <img class="box-img" src="s8.jpg" alt="">
+                </div>
+                <div class="item9">
+                    <img class="box-img" src="s9.jpg" alt="">
+                </div>
+                <div class="item10">
+                    <img class="box-img" src="s10.jpg" alt="">
+                </div>
+                <div class="item11">
+                    <img class="box-img" src="s11.jpg" alt="">
+                </div>
+                <div class="item12">
+                    <img class="box-img" src="s12.jpg" alt="">
+                </div>
+                <div class="item13">
+                    <img class="box-img" src="s13.jpg" alt="">
+                </div>
+                <div class="item14">
+                    <img class="box-img" src="s14.jpeg" alt="">
+                </div>
+                <div class="item15">
+                    <img class="box-img" src="s15.jpg" alt="">
+                </div>
+                <div class="item16">
+                    <img class="box-img" src="s16.jpeg" alt="">
+                </div>
+               
+            </div>
+        </div>
+
+
+    </div>
+
+</body>
+
+</html>
